@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<style>
+
+    body {
+        background-image: url("image/back.jpg");
+    }
+</style>
+</head>
+<body>
+
+<!--<h1>HOME PAGE</h1>-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href=""><p class= "brand">BOOK SHOP</p></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" th:href="@{'/categories'}"> <p class ="item">Categories</p></a>
+            <a class="nav-item nav-link" th:href="@{'/products'}"><p class ="item">Products</p></a>
+            <a class="nav-item nav-link" th:href="@{'/authors'}"><p class ="item">Author</p></a>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-dark bg-dark">
+
+<!--    <span class="navbar-brand mb-0 h1">BOOKSHOP </span>-->
+
+
+</nav>
+
+<div class="row">
+
+    <div class="col-sm-6">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="column">  <div class="p-3 mb-2 bg-secondary text-white">Item</div></div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="panel-body bg-dark" style="color: white">
+
+                <form id="frm-project">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <img src="image/image.jpg" id="Action" class="photo" width="100" height="100" data-toggle="modal" data-target="#exampleModal">
+                            </div>
+                            <div class="col">
+                                <b>Action and Adventure</b>
+                            </div>
+                            <div class="col">
+                                <a href="products"> <input  id="comic" type="button" class="btn btn-warning" value="More Details" name="More Details"  ></a>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="image/booknew.jpg" id="Fancy" class="photo" width="100" height="100" data-toggle="modal" data-target="#exampleModal">
+                            </div>
+                            <div class="col">
+                                <b>Comic Book and Graphic</b>
+                            </div>
+                            <div class="col">
+                                <a href="products"> <input type="button" class="btn btn-warning" value="More Details" name="More Details"  ></a>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="image/book1.png" id="Horror" class="photo" width="100" height="100" data-toggle="modal" data-target="#exampleModal">
+                            </div>
+                            <div class="col">
+                                <b>Fantasy</b>
+                            </div>
+                            <div class="col">
+                                <a href="products"> <input type="button" class="btn btn-warning" value="More Details" name="More Details"  ></a>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="image/landing-book.png" id="Literary" class="photo" width="100" height="100" data-toggle="modal" data-target="#exampleModal">
+                            </div>
+                            <div class="col">
+                                <b>Literary Friction</b>
+                            </div>
+                            <div class="col">
+                                <a href="products"> <input type="button" class="btn btn-warning" value="More Details" name="More Details"  ></a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="image/book1.png" id="5" class="photo" width="100" height="100" data-toggle="modal" data-target="#exampleModal">
+                            </div>
+                            <div class="col">
+                                <b>Horror</b>
+                            </div>
+                            <div class="col">
+                                <a href="products"> <input type="button" class="btn btn-warning" value="More Details" name="More Details"  ></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="container">
+            <div class="p-3 mb-2 bg-secondary text-white">AddProducts</div>
+            <table id="tbl-item" class="table table-dark table-bordered" cellpadding="0" cellspacing="0" width="100%" align="center">
+                <thead>
+
+                <tr>
+                    <th>Delete</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                </tr>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="p-3 mb-2 bg-secondary text-white">Bill</div>
+        <div>
+            <label>Total</label>
+            <input type="text" style="color: yellow; background: black; font-size: 30px;" id="total" name="total" placeholder="Total" required>
+        </div>
+        </br>
+
+        <div>
+            <input type="button" class="btn btn-warning" value="reset" name="reset" id="reset">
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Qty</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <input type="number" style="color: yellow; background: black; font-size: 30px;" id="qty" name="qty" placeholder="Qty" required>
+                </div>
+            </div>
+
+
+
+
+            <div class="modal-footer">
+                <input type="button" class="btn btn-info" value="Add" name="add" id="add" onclick="add()">
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="component/jquery/jquery.js"></script>-->
+<!--<script src="component/jquery/jquery.min.js"></script>-->
+
+<script type="text/javascript">
+
+    var total = 0;
+    var tot = 0;
+
+    var item = null;
+    var price = 0;
+
+
+    var a = "";
+
+    $("img").on("click",function()
+    {
+
+        a = $(this).prop('id')
+
+    });
+
+
+    function add()
+    {
+        if(a == "Action")
+        {
+
+            item = "Action";
+            price = 232;
+
+
+        }
+        else if(a == "comic")
+        {
+            item = "comic";
+            price = 335;
+
+        }
+        else if(a == "Fancy")
+        {
+            item = "Fancy";
+            price = 140;
+
+        }
+        else if(a == "Horror")
+        {
+            item = "Horror";
+            price = 545;
+
+        }
+
+        else if(a == "Literary")
+        {
+            item = "Literary";
+            price = 435;
+
+        }
+
+        var qty = $('#qty').val();
+        tot = qty * price;
+
+        var table1 =
+
+            "<tr>" +
+            "<td><button type='button' name='record' class='btn btn-warning' onclick='deleterow(this)'>Delete</td>" +
+            "<td>" + item    +  "</td>" +
+            "<td>" + price    +  "</td>" +
+
+            "<td>" + qty    +  "</td>" +
+
+            "<td>" + tot    +  "</td>" +
+
+            "</tr>" ;
+
+
+        total += Number(tot);
+        $('#total').val(total);
+
+
+        $("table tbody").append(table1);
+        $("exampleModal").modal('toggle');
+        $('#qty').val("1");
+
+
+
+
+    }
+
+    function deleterow(e)
+    {
+        total_cost = parseInt($(e).parent().parent().find('td:last').text(),10);
+        total -= total_cost;
+        $('#total').val(total);
+        $(e).parent().parent().remove();
+
+
+
+    }
+
+
+
+    $('#reset').click(function()
+    {
+        location.reload();
+    });
+
+</script>
+
+</body>
+
+</html>
